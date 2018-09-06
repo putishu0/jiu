@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>酒</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/js.js"></script>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio; //还原设备的真实分辨率；
+        //devicePixelRatio设备的像素比；
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+</head>
+<body>
+    <header>
+        <img src="img/top.png" alt="">
+    </header>
+    <section>
+        <img src="img/icon1.png" alt="">
+        <img src="img/icon2.png" alt="">
+        <img src="img/icon3.png" alt="">
+        <img src="img/icon4.png" alt="">
+        <img src="img/icon5.png" alt="">
+        <img src="img/icon6.png" alt="">
+        <img src="img/icon7.png" alt="">
+        <img src="img/icon8.png" alt="">
+    </section>
+    <form action="" class="form">
+        <p>姓名<span>*</span></p>
+        <input type="text">
+        <p>电话<span>*</span></p>
+        <input type="text">
+        <p>地区<span>*</span></p>
+        <input type="text">
+        <p>留言<span>*</span></p>
+        <textarea cols="30" rows="5"></textarea>
+        <button>提交</button>
+    </form>
+    <ul>
+        <!--<li><a href="index.html">首页</a></li>-->
+        <li><a href="contact.html">联系我们:19928375952</a></li>
+    </ul>
+
+    <footer>
+        豫ICP备17033667号
+    </footer>
+    <div class="fixed">
+       <a href="tel:19928375952"><img src="img/main_2.png" alt=""></a> 
+    </div>
+    <div class="fixed1">
+     <img src="img/main_1.png" alt="">
+    </div>
+</body>
+</html>
